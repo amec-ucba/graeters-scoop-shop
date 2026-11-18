@@ -1,7 +1,8 @@
-# 💻 Assignment Boilerplate
+# 🍦Graeter's Scoop Shop
 
-A starting point for assignment and exercise repos. It includes submission instructions, editor and Git configuration,
-and a pull request template so every assignment works the same way.
+The Graeter's Scoop Shop site is already built. In this exercise you add the finishing details with positioning,
+z-index, pseudo-classes and pseudo-elements: a sticky category nav, pinned card badges, hover and focus states, a
+striped price table and decorative quotation marks.
 
 > [!NOTE]
 > `.editorconfig`, `.gitattributes`, `.gitignore`, `.noai`, and the `.github` and `.idea`
@@ -12,7 +13,7 @@ and a pull request template so every assignment works the same way.
 > [!IMPORTANT]
 > **Start here: [read ASSIGNMENT.md →](.github/ASSIGNMENT.md)**
 
-It has the requirements, grading criteria, and due date. Read it before you start, and check it again before you submit.
+It has the requirements and the grading rubric. The due date is in Canvas. Read it before you start, and check it again before you submit.
 
 ## ✅ At a Glance
 
@@ -22,17 +23,26 @@ Every assignment follows the same steps. Each guide has screenshots for every st
 |------|----------------------------------------------------------------------------|-----------------------------------------------|
 | 0    | **First assignment only:** install and set up WebStorm                     | [WebStorm Setup](.github/WEBSTORM_SETUP.md)   |
 | 1    | Create your repo from this template, clone it, and make a `develop` branch | [Getting Started](.github/GETTING_STARTED.md) |
-| 2    | Build your page in the root folder                                         | [Where Your Files Go](#-where-your-files-go)  |
+| 2    | Write your styles in `css/details.css`                                     | [Where Your Files Go](#-where-your-files-go)  |
 | 3    | Commit and push often, then turn on GitHub Pages                           | [Publishing](.github/PUBLISHING.md)           |
 | 4    | Open a pull request into `main` and submit its URL in Canvas               | [Submitting](.github/SUBMITTING.md)           |
 
 ## 📂 Where Your Files Go
 
-Create your files in the **root folder** of this repo — the same folder as this README.
-GitHub Pages publishes from the root, so `index.html` has to live there or your site will 404. Group your assets into
-subfolders:
+The pages and starter styles are already in place. Write all of your CSS in **`css/details.css`**. The comment at the
+top of that file lists each task. The only HTML you add is the card badges in `index.html`.
 
-<img src=".github/images/webstorm-project-files.png" alt="The WebStorm Project panel showing index.html in the root folder, with css/style.css, images/photo.jpg, and js/script.js in their own subfolders, all highlighted" width="350">
+```
+graeters-scoop-shop/
+├── index.html        Flavors page (add the card badges here)
+├── about.html        Our Story page
+├── css/
+│   ├── base.css      Provided styles and color variables. Don't edit.
+│   └── details.css   Your work goes here
+└── images/           Logo and photos
+```
+
+Keep `index.html` in the root folder. GitHub Pages publishes from the root, so moving it will make your site 404.
 
 ## 🤖 AI Policy
 
