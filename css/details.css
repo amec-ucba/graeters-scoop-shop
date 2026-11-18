@@ -1,0 +1,10 @@
+/* Details (Week 12)
+   Write your Week 12 styles here. Use the color variables in base.css.
+
+   1. Make the category nav sticky, above everything that scrolls under it.
+   2. Pin each .badge to its card's top-right corner.
+   3. Give every :hover a matching :focus-visible (category nav, site nav, buttons),
+      and give links a visible focus outline.
+   4. Zebra-stripe the price table rows with :nth-child().
+   5. Add decorative quotation marks to the blockquote with ::before and ::after.
+----------------------------------------------------------------------------- */

@@ -1,0 +1,312 @@
+/* Base Styles (provided)
+   Tokens, layout, type and Week 11 tables.
+   No positioning, z-index, pseudo-classes or pseudo-elements.
+----------------------------------------------------------------------------- */
+
+/* Variables
+----------------------------------------------------------------------------- */
+:root {
+  color-scheme: light;
+  --color-primary: #93034c;
+  --color-primary-hover: #6e0239;
+  --color-light: #fffbf7;
+  --color-surface: #ffffff;
+  --color-text: #4a0f2e;
+  --color-muted: #7a4a62;
+  --color-border: #f0dcc8;
+  --color-border-strong: #c9a98c;
+  --color-stripe: #fdf1e4;
+  --color-nav-bg: #f9e6d2;
+}
+
+/* Layout
+----------------------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-light);
+  color: var(--color-text);
+  font-family: "Lora", Georgia, serif;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+section {
+  scroll-margin-top: 4rem;
+}
+
+/* Header
+----------------------------------------------------------------------------- */
+header {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem 1.25rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+header img {
+  display: block;
+  width: auto;
+  height: 2.75rem;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header nav ul {
+  display: flex;
+  gap: .25rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav a {
+  display: block;
+  padding: .4rem .6rem;
+  border-radius: .35rem;
+  color: var(--color-light);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: .3em;
+}
+
+/* Category Nav (students make it sticky)
+----------------------------------------------------------------------------- */
+.category-nav {
+  background-color: var(--color-nav-bg);
+}
+
+.category-nav ul {
+  display: flex;
+  gap: .25rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: .5rem 1rem;
+  overflow-x: auto;
+  list-style: none;
+}
+
+.category-nav a {
+  display: block;
+  padding: .45rem .85rem;
+  border-radius: .35rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Type
+----------------------------------------------------------------------------- */
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  color: var(--color-primary);
+  line-height: 1.1;
+}
+
+h1 {
+  margin: 2rem 0 .5rem;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+h2 {
+  margin: 2.5rem 0 1.25rem;
+  font-size: 1.8rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.lead {
+  max-width: 40rem;
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--color-muted);
+}
+
+/* Buttons
+----------------------------------------------------------------------------- */
+.button {
+  display: inline-block;
+  padding: .55rem 1rem;
+  border-radius: .35rem;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header .button {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+}
+
+/* Cards
+----------------------------------------------------------------------------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1.75rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: .5rem;
+  background-color: var(--color-surface);
+}
+
+.card img {
+  display: block;
+  width: calc(100% + 2.5rem);
+  max-width: none;
+  height: auto;
+  margin: -1.25rem -1.25rem 1rem;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.card p {
+  margin: .5rem 0 0;
+  color: var(--color-muted);
+}
+
+.badge {
+  display: inline-block;
+  padding: .2rem .65rem;
+  border-radius: 999px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  font-family: "Lora", Georgia, serif;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+/* About Page
+----------------------------------------------------------------------------- */
+.story {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.story p {
+  margin: 0 0 1rem;
+}
+
+.story figure {
+  max-width: 16rem;
+  margin: 0;
+}
+
+.story img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.story figcaption {
+  margin-top: .75rem;
+  color: var(--color-muted);
+  font-size: .9rem;
+}
+
+blockquote {
+  margin: 3rem 0;
+  padding: 2rem 4rem 2rem 4.5rem;
+  border-radius: .5rem;
+  background-color: var(--color-surface);
+}
+
+blockquote p {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  color: var(--color-primary);
+}
+
+@media (min-width: 48rem) {
+  .story {
+    grid-template-columns: 16rem 1fr;
+  }
+}
+
+/* Tables (Week 11 styles, provided)
+----------------------------------------------------------------------------- */
+.table-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-surface);
+}
+
+caption {
+  padding: .5rem 0;
+  text-align: left;
+  font-weight: 700;
+}
+
+th,
+td {
+  padding: .6rem .9rem;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+}
+
+thead th {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+/* Footer
+----------------------------------------------------------------------------- */
+footer {
+  margin-top: 3rem;
+  padding: 2rem 0 2.5rem;
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-stripe);
+  color: var(--color-muted);
+  font-size: .85rem;
+}
+
+footer p {
+  margin: 0 0 .4rem;
+}
+
+footer a {
+  color: var(--color-primary);
+}
