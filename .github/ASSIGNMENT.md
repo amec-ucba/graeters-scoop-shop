@@ -28,7 +28,9 @@ Write all of your CSS in `css/details.css`. Don't edit `css/base.css`.
 
 ## 🖼️ Example Output
 
-<!-- Add a screenshot of the finished page here. -->
+This is the finished Flavors page at desktop width. Yours should look very close to it.
+
+![The finished Flavors page at desktop width: the category nav under the header, badges pinned to the top-right corner of the Black Raspberry Chip, Boldly Bearcat and Spirited Eggnog cards, and a scoop price table with alternating row colors](images/final.png)
 
 What a screenshot won't show:
 
@@ -67,5 +69,13 @@ What a screenshot won't show:
 - [MDN: `:nth-child()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
 - [MDN: `::before`](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) and
   [`::after`](https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
+
+The AI policy and submission instructions are in the [README](../README.md).
+
+## 🆘 Getting Help
+
+Ask during class or office hours, or post on the Canvas discussion board.
+
+---
 
 The AI policy and submission instructions are in the [README](../README.md).
