@@ -86,7 +86,7 @@ header nav a {
   text-decoration: none;
 }
 
-header nav a[aria-current="page"] {
+header nav a.current {
   text-decoration: underline;
   text-underline-offset: .3em;
 }
